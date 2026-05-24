@@ -1,0 +1,11 @@
+# Tài liệu nguồn (không cần deploy)
+*.docx
+*.xlsx
+*.csv
+
+# Hệ thống
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/

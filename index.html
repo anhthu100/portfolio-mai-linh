@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nguyễn Thị Mai Linh — Senior Marketing Manager</title>
+<meta name="description" content="Senior Marketing Manager với 7 năm điều hành tăng trưởng cho các thương hiệu FMCG và E-commerce. Quản lý ngân sách 15 tỷ VND/năm, dẫn dắt đội ngũ 8 người." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #FAFAF7;
+    --bg-soft:   #F2F0EA;
+    --ink:       #0E0E0E;
+    --ink-soft:  #4A4A48;
+    --line:      #DAD7CC;
+    --line-soft: #EAE7DD;
+    --navy:      #1E3A5F;
+    --navy-deep: #14273F;
+    --gold:      #B8894A;
+    --serif:     'Playfair Display', Georgia, 'Times New Roman', serif;
+    --sans:      'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 88px; }
+  @media (max-width: 760px) { section[id] { scroll-margin-top: 72px; } }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  ::selection { background: var(--navy); color: var(--bg); }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  @media (max-width: 600px) { .container { padding: 0 20px; } }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--navy);
+  }
+  .eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: var(--navy);
+    vertical-align: middle;
+    margin-right: 14px;
+    transform: translateY(-2px);
+  }
+
+  /* ─── NAV ─── */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(250, 250, 247, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav-logo {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: var(--navy);
+  }
+  .nav-logo .dot { color: var(--gold); }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .nav-links a { color: var(--ink-soft); transition: color 0.2s ease; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta {
+    background: var(--navy);
+    color: #fff !important;
+    padding: 11px 22px;
+    border-radius: 999px;
+    font-weight: 500;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  .nav-cta:hover { background: var(--navy-deep); transform: translateY(-1px); }
+  @media (max-width: 820px) {
+    .nav-inner { padding: 18px 20px; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    .nav-links { gap: 0; }
+  }
+
+  /* ─── HERO ─── */
+  .hero { padding: 110px 0 120px; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 88px;
+    align-items: center;
+  }
+  .hero-eyebrow { margin-bottom: 36px; }
+  .hero-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(44px, 7vw, 88px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 28px;
+  }
+  .hero-title .accent { color: var(--navy); font-style: italic; font-weight: 400; }
+  .hero-role {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--navy);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .hero-role .sep { color: var(--gold); margin: 0 12px; }
+  .hero-sub {
+    max-width: 560px;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+  .hero-tag { font-size: 14px; color: var(--ink-soft); margin-bottom: 40px; }
+  .hero-tag strong { color: var(--navy); font-weight: 600; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    border: 1px solid transparent;
+  }
+  .btn-primary { background: var(--navy); color: #fff; }
+  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
+  .btn-primary::after { content: '→'; transition: transform 0.25s ease; }
+  .btn-primary:hover::after { transform: translateX(4px); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn-ghost:hover { border-color: var(--navy); color: var(--navy); }
+  .hero-avatar {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 4px;
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+  }
+  .hero-avatar img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.02); }
+  .hero-avatar::after {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .hero-avatar-tag {
+    position: absolute;
+    bottom: 22px; left: 22px;
+    background: rgba(250,250,247,0.95);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--navy);
+    border: 1px solid var(--line);
+  }
+  @media (max-width: 900px) {
+    .hero { padding: 64px 0 72px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .hero-avatar { max-width: 380px; margin: 0 auto; }
+  }
+
+  /* ─── ACHIEVEMENTS ─── */
+  .achievements {
+    padding: 100px 0 110px;
+    background: var(--bg-soft);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .achievements-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .achievements-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(32px, 4.5vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 620px;
+  }
+  .achievements-note {
+    font-size: 13px;
+    color: var(--ink-soft);
+    max-width: 280px;
+    text-align: right;
+    line-height: 1.55;
+  }
+  .ach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .ach-card { padding: 36px 0 0; border-top: 2px solid var(--navy); position: relative; }
+  .ach-num {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(64px, 9vw, 124px);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .ach-num .unit { color: var(--gold); font-style: italic; font-weight: 500; font-size: 0.55em; letter-spacing: 0; margin-left: 4px; }
+  .ach-num .sign { color: var(--gold); font-weight: 500; font-size: 0.7em; }
+  .ach-label {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gold);
+    display: inline-block;
+  }
+  .ach-desc { font-size: 15px; line-height: 1.6; color: var(--ink-soft); max-width: 320px; }
+  .ach-desc strong { color: var(--ink); font-weight: 600; }
+  @media (max-width: 900px) {
+    .achievements { padding: 72px 0 80px; }
+    .achievements-head { margin-bottom: 40px; }
+    .achievements-note { text-align: left; }
+    .ach-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ─── ABOUT ─── */
+  .about { padding: 120px 0; }
+  .about-grid { display: grid; grid-template-columns: 1fr 2.4fr; gap: 80px; align-items: start; }
+  .about-side .eyebrow { display: block; margin-bottom: 16px; }
+  .about-side h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(28px, 3vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .about-body {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(20px, 2vw, 26px);
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+  }
+  .about-body p + p { margin-top: 28px; }
+  .about-body em { font-style: italic; color: var(--navy); }
+  .about-meta {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    font-family: var(--sans);
+  }
+  .about-meta-item .k {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .about-meta-item .v { font-size: 15px; color: var(--ink); line-height: 1.45; font-weight: 500; }
+  @media (max-width: 900px) {
+    .about { padding: 80px 0; }
+    .about-grid { grid-template-columns: 1fr; gap: 32px; }
+    .about-meta { grid-template-columns: 1fr 1fr; gap: 24px; }
+  }
+  @media (max-width: 480px) { .about-meta { grid-template-columns: 1fr; } }
+
+  /* ─── PROJECTS ─── */
+  .projects {
+    padding: 110px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-soft);
+  }
+  .projects-head { margin-bottom: 56px; }
+  .projects-head .eyebrow { display: block; margin-bottom: 16px; }
+  .projects-head h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(36px, 5vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 780px;
+  }
+  .projects-head h2 em { font-style: italic; color: var(--navy); font-weight: 400; }
+
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .proj-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16,1,0.3,1),
+                box-shadow 0.4s cubic-bezier(0.16,1,0.3,1),
+                border-color 0.3s ease;
+  }
+  .proj-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 24px 64px rgba(14,14,14,0.11);
+    border-color: var(--navy);
+  }
+  .proj-media {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--bg-soft);
+  }
+  .proj-media img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16,1,0.3,1);
+    filter: saturate(0.92) contrast(1.03);
+  }
+  .proj-card:hover .proj-media img { transform: scale(1.07); }
+  .proj-body { padding: 26px 26px 28px; }
+  .proj-time {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .proj-name {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(19px, 1.6vw, 22px);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 12px;
+    transition: color 0.2s ease;
+  }
+  .proj-card:hover .proj-name { color: var(--navy); }
+  .proj-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin-bottom: 22px;
+  }
+  .proj-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 18px 0;
+    margin-bottom: 18px;
+    border-top: 1px solid var(--line-soft);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .result-item { text-align: center; }
+  .result-num {
+    display: block;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(20px, 2vw, 26px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .result-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .proj-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .ptag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--navy);
+    letter-spacing: 0.02em;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .proj-card:hover .ptag { border-color: rgba(30,58,95,0.4); background: rgba(30,58,95,0.05); }
+  @media (max-width: 1100px) { .proj-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 680px) {
+    .proj-grid { grid-template-columns: 1fr; }
+    .projects { padding: 80px 0; }
+  }
+
+  /* ─── SKILLS ─── */
+  .skills { padding: 110px 0; border-top: 1px solid var(--line); background: var(--bg); }
+  .skills-head { display: grid; grid-template-columns: 1fr 2.4fr; gap: 80px; margin-bottom: 56px; }
+  .skills-head h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .skills-head h2 em { font-style: italic; color: var(--navy); font-weight: 400; }
+  .skills-head p { align-self: end; color: var(--ink-soft); font-size: 16px; max-width: 520px; }
+  .cluster {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 80px;
+    padding: 36px 0;
+    border-top: 1px solid var(--line);
+    align-items: baseline;
+  }
+  .cluster-id { display: flex; align-items: baseline; gap: 14px; }
+  .cluster-num { font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--gold); font-weight: 500; }
+  .cluster-name { font-family: var(--serif); font-size: clamp(22px, 2.4vw, 28px); font-weight: 500; color: var(--navy); letter-spacing: -0.01em; line-height: 1.2; }
+  .cluster-list { font-family: var(--sans); font-size: 16px; line-height: 1.85; color: var(--ink); font-weight: 400; }
+  .cluster-list .sep { color: var(--gold); margin: 0 10px; font-weight: 500; }
+
+  /* Skill bars — added after cluster list */
+  .skillbars-section {
+    margin-top: 8px;
+    padding: 48px 0 0;
+    border-top: 1px solid var(--line);
+  }
+  .skillbars-head {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 80px;
+    align-items: start;
+    margin-bottom: 36px;
+  }
+  .skillbars-head .sb-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(20px, 1.8vw, 24px);
+    color: var(--navy);
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+  .skillbars-head .sb-note {
+    font-size: 14px;
+    color: var(--ink-soft);
+    align-self: end;
+    padding-bottom: 2px;
+  }
+  .skillbars-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 80px;
+  }
+  .skillbars-list {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    row-gap: 22px;
+  }
+  .sb-item {}
+  .sb-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .sb-name { font-size: 14px; font-weight: 500; color: var(--ink); }
+  .sb-pct { font-family: var(--serif); font-style: italic; font-size: 14px; font-weight: 500; color: var(--navy); }
+  .sb-track { height: 3px; background: var(--line); border-radius: 99px; overflow: hidden; }
+  .sb-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--navy), #2d5a8e);
+    border-radius: 99px;
+    transition: width 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+  }
+  .sb-fill::after {
+    content: '';
+    position: absolute;
+    right: -1px; top: -1px; bottom: -1px;
+    width: 8px;
+    background: var(--gold);
+    border-radius: 99px;
+  }
+  @media (max-width: 900px) {
+    .skills { padding: 80px 0; }
+    .skills-head { grid-template-columns: 1fr; gap: 24px; margin-bottom: 32px; }
+    .cluster { grid-template-columns: 1fr; gap: 14px; padding: 28px 0; }
+    .skillbars-head { grid-template-columns: 1fr; gap: 8px; }
+    .skillbars-grid { grid-template-columns: 1fr; gap: 0; }
+    .skillbars-list { grid-column: 1; grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) { .skillbars-list { grid-template-columns: 1fr; } }
+
+  /* ─── HIGHLIGHTS ─── */
+  .highlights { padding: 100px 0; background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .hl-head { margin-bottom: 48px; }
+  .hl-head .eyebrow { display: block; margin-bottom: 16px; }
+  .hl-head h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(32px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 720px;
+  }
+  .hl-list { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 56px; }
+  .hl-item {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+  }
+  .hl-item:last-child, .hl-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--line); }
+  .hl-name { font-family: var(--serif); font-size: clamp(17px, 1.5vw, 20px); font-weight: 500; color: var(--ink); line-height: 1.3; letter-spacing: -0.005em; }
+  .hl-meta { font-size: 13px; color: var(--navy); font-weight: 500; letter-spacing: 0.04em; flex-shrink: 0; text-align: right; }
+  @media (max-width: 760px) {
+    .hl-list { grid-template-columns: 1fr; column-gap: 0; }
+    .hl-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+    .highlights { padding: 72px 0; }
+  }
+
+  /* ─── CONTACT ─── */
+  .contact { padding: 130px 0 90px; background: var(--navy); color: var(--bg); position: relative; }
+  .contact .eyebrow { color: var(--gold); }
+  .contact .eyebrow::before { background: var(--gold); }
+  .contact-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(40px, 6.5vw, 88px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 28px 0 24px;
+    max-width: 1000px;
+  }
+  .contact-title em { font-style: italic; color: var(--gold); font-weight: 400; }
+  .contact-lead { font-size: 18px; line-height: 1.6; color: rgba(250,250,247,0.78); max-width: 620px; margin-bottom: 48px; }
+  .contact-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--gold);
+    color: var(--navy-deep);
+    padding: 20px 36px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin-bottom: 72px;
+    transition: all 0.25s ease;
+  }
+  .contact-cta:hover { background: #fff; color: var(--navy-deep); transform: translateY(-2px); }
+  .contact-cta::after { content: '→'; transition: transform 0.25s ease; }
+  .contact-cta:hover::after { transform: translateX(4px); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(250,250,247,0.2);
+  }
+  .contact-item .label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-weight: 600; }
+  .contact-item .value { font-family: var(--serif); font-size: 19px; font-weight: 500; line-height: 1.3; color: #fff; word-break: break-word; }
+  .contact-item a { transition: color 0.2s ease; }
+  .contact-item a:hover { color: var(--gold); }
+  @media (max-width: 900px) {
+    .contact { padding: 80px 0 56px; }
+    .contact-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  }
+  @media (max-width: 480px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-cta { padding: 18px 28px; font-size: 15px; }
+  }
+
+  /* ─── FOOTER ─── */
+  .footer { padding: 28px 0; background: var(--navy-deep); color: rgba(250,250,247,0.55); font-size: 13px; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-inner .tag { letter-spacing: 0.05em; }
+
+  /* ─── PROJ CTA STRIP ─── */
+  .proj-cta {
+    margin-top: 48px;
+    padding: 32px 40px;
+    background: var(--navy);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .proj-cta p {
+    color: rgba(250,250,247,0.85);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  .proj-cta p strong { color: #fff; }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy-deep) !important;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-gold::after { content: '→'; transition: transform 0.25s ease; }
+  .btn-gold:hover { background: #fff; transform: translateY(-1px); }
+  .btn-gold:hover::after { transform: translateX(4px); }
+  @media (max-width: 640px) {
+    .proj-cta { padding: 28px 24px; }
+    .btn-gold { width: 100%; justify-content: center; }
+  }
+
+  /* ─── TESTIMONIALS ─── */
+  .testimonials {
+    padding: 96px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+  }
+  .testi-head { margin-bottom: 48px; }
+  .testi-head .eyebrow { display: block; margin-bottom: 16px; }
+  .testi-head h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 680px;
+  }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .testi-card {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--navy);
+    border-radius: 4px;
+    padding: 36px 32px 32px;
+    position: relative;
+  }
+  .testi-mark {
+    font-family: var(--serif);
+    font-size: 72px;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.25;
+    position: absolute;
+    top: 16px;
+    left: 28px;
+    pointer-events: none;
+    user-select: none;
+  }
+  .testi-quote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(17px, 1.6vw, 20px);
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+  }
+  .testi-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 20px;
+  }
+  .testi-author strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .testi-author span {
+    font-size: 13px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+  @media (max-width: 760px) {
+    .testi-grid { grid-template-columns: 1fr; }
+    .testimonials { padding: 72px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    .sb-fill { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">Mai Linh<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#about">Giới thiệu</a>
+      <a href="#achievements">Thành tích</a>
+      <a href="#projects">Dự án</a>
+      <a href="#skills">Kỹ năng</a>
+      <a href="#contact">Liên hệ</a>
+      <a href="mailto:linh.nguyen@email.com" class="nav-cta">Liên hệ ngay</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow hero-eyebrow">Đang tiếp nhận vị trí CMO &amp; Head of Marketing — 2025</div>
+          <h1 class="hero-title">
+            Nguyễn Thị<br>
+            <span class="accent">Mai Linh</span>
+          </h1>
+          <div class="hero-role">
+            Senior Marketing Manager <span class="sep">/</span> Digital Growth Specialist
+          </div>
+          <p class="hero-sub">
+            Bảy năm điều hành tăng trưởng cho các thương hiệu FMCG và E-commerce.
+            Quản lý ngân sách 15 tỷ VND/năm, dẫn dắt đội ngũ 8 người, vận hành chiến dịch
+            đa kênh ở quy mô doanh thu trăm tỷ.
+          </p>
+          <p class="hero-tag">
+            Hiện phụ trách tăng trưởng tại <strong>GreenMart Vietnam</strong> &middot; Đặt tại TP. Hồ Chí Minh
+          </p>
+          <div class="hero-actions">
+            <a href="mailto:linh.nguyen@email.com?subject=Trao%20đổi%20về%20vị%20trí%20Marketing%20Manager" class="btn btn-primary">Trao đổi về vị trí</a>
+            <a href="#achievements" class="btn btn-ghost">Xem thành tích</a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <img src="NguyenThiMaiLinh_avatar.png" alt="Chân dung Nguyễn Thị Mai Linh" />
+          <div class="hero-avatar-tag">Nguyễn Thị Mai Linh</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ─── -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <div class="achievements-head">
+        <div>
+          <p class="eyebrow" style="margin-bottom: 18px;">Thành tích nổi bật</p>
+          <h2 class="achievements-title">
+            Ba con số đại diện cho cách tôi vận hành tăng trưởng — đo lường được, có mục tiêu, có kỷ luật.
+          </h2>
+        </div>
+        <p class="achievements-note">
+          Số liệu trích từ chiến dịch 11.11/2023 và báo cáo paid media 12 tháng tại GreenMart Vietnam.
+        </p>
+      </div>
+
+      <div class="ach-grid">
+        <article class="ach-card">
+          <div class="ach-num">
+            <span class="ach-count" data-target="487" data-suffix="">487</span><span class="unit">tỷ</span>
+          </div>
+          <span class="ach-label">Doanh thu 24 giờ</span>
+          <p class="ach-desc">
+            <strong>Chiến dịch 11.11 GreenMart 2023.</strong> Multi-channel trên 5 kênh, war-room 24h, vượt target 139% với 124.000 đơn hàng trong một ngày.
+          </p>
+        </article>
+
+        <article class="ach-card">
+          <div class="ach-num">
+            <span class="ach-count" data-target="4.2" data-decimal="1">4.2</span><span class="unit">×</span>
+          </div>
+          <span class="ach-label">ROAS trung bình</span>
+          <p class="ach-desc">
+            <strong>Toàn bộ paid media 2023.</strong> Cao hơn 1,5 lần benchmark ngành FMCG E-commerce (2,8×) — duy trì ổn định qua 12 tháng và năm kênh quảng cáo lớn.
+          </p>
+        </article>
+
+        <article class="ach-card">
+          <div class="ach-num">
+            <span class="sign">+</span><span class="ach-count" data-target="89">89</span><span class="unit">%</span>
+          </div>
+          <span class="ach-label">Tăng trưởng YoY</span>
+          <p class="ach-desc">
+            <strong>Doanh thu năm so với năm trước.</strong> Top performer trong nhóm FMCG E-commerce Việt Nam, đi kèm tỷ lệ giữ chân khách hàng tăng từ 42% lên 68%.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects-head">
+        <span class="eyebrow">Dự án nổi bật</span>
+        <h2>Ba chiến dịch tiêu biểu — mỗi dự án là một bài toán <em>khác nhau</em> về tăng trưởng.</h2>
+      </div>
+
+      <div class="proj-grid">
+
+        <!-- Project 1: 11.11 -->
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="campaign_results_infographic.png" alt="GreenMart 11.11 Mega Sale 2023" />
+          </div>
+          <div class="proj-body">
+            <span class="proj-time">09/2023 – 11/2023 · GreenMart Vietnam</span>
+            <h3 class="proj-name">11.11 Mega Sale — 487 tỷ trong 24 giờ</h3>
+            <p class="proj-desc">
+              Chiến dịch sales lớn nhất lịch sử GreenMart, triển khai đồng thời trên 5 kênh với tổng ngân sách 8,5 tỷ VND. Tôi chịu trách nhiệm chiến lược tổng thể, phân bổ ngân sách theo thời gian thực và điều phối war-room 24h vào ngày D-day cùng 8 người internal và 2 agency.
+            </p>
+            <div class="proj-results">
+              <div class="result-item">
+                <span class="result-num" data-target="487" data-suffix=" tỷ">487 tỷ</span>
+                <span class="result-label">Doanh thu 24h</span>
+              </div>
+              <div class="result-item">
+                <span class="result-num" data-target="139" data-suffix="%" data-prefix="+">+139%</span>
+                <span class="result-label">Đạt target</span>
+              </div>
+              <div class="result-item">
+                <span class="result-num" data-target="34000" data-suffix="">34.000</span>
+                <span class="result-label">Khách hàng mới</span>
+              </div>
+            </div>
+            <div class="proj-tags">
+              <span class="ptag">Facebook Ads</span>
+              <span class="ptag">Google Ads</span>
+              <span class="ptag">TikTok Ads</span>
+              <span class="ptag">Email Marketing</span>
+              <span class="ptag">Real-time Optimization</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: TikTok -->
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="campaign_dashboard_screenshot.png" alt="GreenMart TikTok Channel Dashboard" />
+          </div>
+          <div class="proj-body">
+            <span class="proj-time">01/2022 – 12/2023 · GreenMart Vietnam</span>
+            <h3 class="proj-name">GreenMart TikTok — 0 → 280K trong 18 tháng</h3>
+            <p class="proj-desc">
+              Xây kênh TikTok GreenMart từ con số 0, thiết lập content strategy và tích hợp TikTok Shop vào hệ thống bán hàng. Tôi đồng thời dẫn dắt rebranding toàn bộ nhận diện thương hiệu — tone giọng, màu sắc, cách xuất hiện nhất quán trên tất cả kênh.
+            </p>
+            <div class="proj-results">
+              <div class="result-item">
+                <span class="result-num" data-target="280" data-suffix="K">280K</span>
+                <span class="result-label">Followers</span>
+              </div>
+              <div class="result-item">
+                <span class="result-num" data-target="12" data-suffix=" tỷ">12 tỷ</span>
+                <span class="result-label">Doanh thu/tháng</span>
+              </div>
+              <div class="result-item">
+                <span class="result-num" data-target="67" data-suffix="">67</span>
+                <span class="result-label">NPS Score (+35)</span>
+              </div>
+            </div>
+            <div class="proj-tags">
+              <span class="ptag">Content Strategy</span>
+              <span class="ptag">TikTok Ads</span>
+              <span class="ptag">Brand Building</span>
+              <span class="ptag">Influencer</span>
+              <span class="ptag">Community</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: CRO -->
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="project_website_redesign_mockup.png" alt="BeautyBox Website Redesign & CRO" />
+          </div>
+          <div class="proj-body">
+            <span class="proj-time">04/2021 – 08/2021 · BeautyBox Vietnam</span>
+            <h3 class="proj-name">BeautyBox Website Redesign &amp; CRO</h3>
+            <p class="proj-desc">
+              Website BeautyBox có bounce rate 68% và conversion 1,8% — phần lớn do mobile experience kém và checkout 7 bước. Tôi lead mobile-first redesign, rút ngắn checkout xuống 3 bước và chạy 14 A/B tests trong 3 tháng để tối ưu từng điểm chạm.
+            </p>
+            <div class="proj-results">
+              <div class="result-item">
+                <span class="result-num" data-target="4.3" data-decimal="1" data-suffix="%">4,3%</span>
+                <span class="result-label">CVR (từ 1,8%)</span>
+              </div>
+              <div class="result-item">
+                <span class="result-num" data-target="42" data-suffix="%">42%</span>
+                <span class="result-label">Bounce Rate</span>
+              </div>
+              <div class="result-item">
+                <span class="result-num" data-target="8.4" data-decimal="1" data-suffix="×">8,4×</span>
+                <span class="result-label">ROI dự án</span>
+              </div>
+            </div>
+            <div class="proj-tags">
+              <span class="ptag">CRO</span>
+              <span class="ptag">A/B Testing</span>
+              <span class="ptag">UX Research</span>
+              <span class="ptag">Analytics</span>
+              <span class="ptag">Mobile Optimization</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Fix 3b: CTA strip ngay sau projects — bắt nhà tuyển dụng tại đỉnh thuyết phục -->
+      <div class="proj-cta">
+        <p>Bạn vừa xem 3 dự án thực tế. Nếu muốn trao đổi thêm về case study, số liệu đầy đủ, hoặc vị trí đang mở — <strong>10 phút gặp ngắn là đủ để bắt đầu.</strong></p>
+        <a href="mailto:linh.nguyen@email.com?subject=Trao%20đổi%20về%20vị%20trí%20Marketing%20Manager" class="btn-gold">Đặt lịch trao đổi</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <!-- Fix 2: Social proof từ CEO & CMO — người ngoài xác nhận điều portfolio tự nói -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="testi-head">
+        <span class="eyebrow">Nhận xét từ đồng nghiệp</span>
+        <h2>Những người đã làm việc cùng tôi nói gì — bằng tên thật, chức vụ thật.</h2>
+      </div>
+      <div class="testi-grid">
+        <blockquote class="testi-card">
+          <div class="testi-mark">"</div>
+          <p class="testi-quote">Linh hiếm — vừa có tư duy chiến lược vừa rất giỏi về execution. Chiến dịch 11.11 là minh chứng rõ nhất: kế hoạch 3 tháng, execution hoàn hảo trong 24 giờ. Không nhiều marketer làm được cả hai.</p>
+          <div class="testi-divider"></div>
+          <footer class="testi-author">
+            <strong>Nguyễn Hải Đăng</strong>
+            <span>CEO — GreenMart Vietnam</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testi-card">
+          <div class="testi-mark">"</div>
+          <p class="testi-quote">Làm việc cùng Linh 3 năm tại BeautyBox — mỗi dự án cô ấy đều bring in data, bring in logic, và luôn exceed expectation. Website CRO project là điển hình: số liệu đầu vào rõ, giải pháp có căn cứ, kết quả đo được.</p>
+          <div class="testi-divider"></div>
+          <footer class="testi-author">
+            <strong>Trần Minh Châu</strong>
+            <span>CMO — BeautyBox Vietnam</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-side">
+          <span class="eyebrow">Giới thiệu</span>
+          <h2>Một marketer điều hành — không phải một marketer chạy việc.</h2>
+        </div>
+        <div>
+          <div class="about-body">
+            <p>
+              Tôi xây sự nghiệp từ vị trí performance marketer ở agency, tiếp tục tại brand-side với BeautyBox và hiện dẫn dắt tăng trưởng tại <em>GreenMart Vietnam</em>. Trong 7 năm, tôi đã quản lý ngân sách marketing 15 tỷ VND/năm, vận hành đội ngũ 8 người gồm content, performance, designer, data analyst và CRM specialist.
+            </p>
+            <p>
+              Cách tiếp cận của tôi là <em>vừa kể chuyện vừa đếm số</em>: mỗi quyết định đều gắn với chỉ số đo lường được — ROAS, CVR, retention, NPS — và mỗi chỉ số đều phải dẫn về một mục tiêu kinh doanh cụ thể. Tôi quen với chiến dịch quy mô trăm tỷ, war-room 24/7 và tái phân bổ ngân sách theo thời gian thực.
+            </p>
+          </div>
+
+          <div class="about-meta">
+            <div class="about-meta-item">
+              <div class="k">Hiện tại</div>
+              <div class="v">Senior Marketing Manager,<br>GreenMart Vietnam</div>
+            </div>
+            <div class="about-meta-item">
+              <div class="k">Phạm vi quản lý</div>
+              <div class="v">Ngân sách 15 tỷ VND/năm<br>Đội ngũ 8 người</div>
+            </div>
+            <div class="about-meta-item">
+              <div class="k">Lĩnh vực</div>
+              <div class="v">FMCG &amp; E-commerce<br>Performance &amp; Brand</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="skills-head">
+        <h2>Năng lực <em>chuyên môn</em></h2>
+        <p>
+          Năm cụm năng lực tôi sử dụng hằng ngày để biến mục tiêu kinh doanh
+          thành chiến dịch đo lường được — từ chiến lược kênh, dữ liệu, thương hiệu, đến vận hành đội ngũ.
+        </p>
+      </div>
+
+      <div class="cluster">
+        <div class="cluster-id">
+          <span class="cluster-num">01</span>
+          <span class="cluster-name">Performance &amp; Paid Media</span>
+        </div>
+        <div class="cluster-list">
+          Facebook Ads<span class="sep">·</span>Google Ads<span class="sep">·</span>TikTok Ads<span class="sep">·</span>Programmatic<span class="sep">·</span>Email Marketing<span class="sep">·</span>Retargeting &amp; Lookalike<span class="sep">·</span>Real-time Bid Optimization
+        </div>
+      </div>
+
+      <div class="cluster">
+        <div class="cluster-id">
+          <span class="cluster-num">02</span>
+          <span class="cluster-name">Analytics &amp; Data</span>
+        </div>
+        <div class="cluster-list">
+          GA4<span class="sep">·</span>Looker Studio<span class="sep">·</span>Meta Business Suite<span class="sep">·</span>Excel nâng cao<span class="sep">·</span>SQL cơ bản<span class="sep">·</span>Attribution Modeling<span class="sep">·</span>Conversion Tracking<span class="sep">·</span>Dashboarding
+        </div>
+      </div>
+
+      <div class="cluster">
+        <div class="cluster-id">
+          <span class="cluster-num">03</span>
+          <span class="cluster-name">Brand &amp; Content Strategy</span>
+        </div>
+        <div class="cluster-list">
+          Brand Strategy<span class="sep">·</span>Positioning<span class="sep">·</span>Content Calendar<span class="sep">·</span>Copywriting<span class="sep">·</span>Visual Direction<span class="sep">·</span>Influencer Marketing<span class="sep">·</span>CRO &amp; UX Thinking
+        </div>
+      </div>
+
+      <div class="cluster">
+        <div class="cluster-id">
+          <span class="cluster-num">04</span>
+          <span class="cluster-name">CRM, AI &amp; Automation</span>
+        </div>
+        <div class="cluster-list">
+          Salesforce Marketing Cloud<span class="sep">·</span>HubSpot<span class="sep">·</span>Mailchimp<span class="sep">·</span>Zapier<span class="sep">·</span>Claude AI<span class="sep">·</span>Marketing Automation<span class="sep">·</span>Prompt Library Design
+        </div>
+      </div>
+
+      <div class="cluster">
+        <div class="cluster-id">
+          <span class="cluster-num">05</span>
+          <span class="cluster-name">Lãnh đạo &amp; Vận hành</span>
+        </div>
+        <div class="cluster-list">
+          Quản lý đội ngũ 8 người<span class="sep">·</span>Ngân sách 15 tỷ VND/năm<span class="sep">·</span>Vendor Management<span class="sep">·</span>Cross-functional Collaboration<span class="sep">·</span>Hiring &amp; Coaching<span class="sep">·</span>Stakeholder Reporting
+        </div>
+      </div>
+
+      <!-- Skill Bars — thêm mới, không xoá cluster cũ -->
+      <div class="skillbars-section">
+        <div class="skillbars-head">
+          <div class="sb-title">Mức độ thành thạo</div>
+          <div class="sb-note">Tự đánh giá dựa trên kết quả thực tế và phạm vi sử dụng hằng ngày trong 7 năm.</div>
+        </div>
+        <div class="skillbars-grid">
+          <div></div><!-- spacer để align với cluster bên trên -->
+          <div class="skillbars-list">
+            <div class="sb-item">
+              <div class="sb-meta">
+                <span class="sb-name">Performance Marketing</span>
+                <span class="sb-pct">95%</span>
+              </div>
+              <div class="sb-track"><div class="sb-fill" data-pct="95"></div></div>
+            </div>
+            <div class="sb-item">
+              <div class="sb-meta">
+                <span class="sb-name">Brand Strategy</span>
+                <span class="sb-pct">88%</span>
+              </div>
+              <div class="sb-track"><div class="sb-fill" data-pct="88"></div></div>
+            </div>
+            <div class="sb-item">
+              <div class="sb-meta">
+                <span class="sb-name">Analytics &amp; Data</span>
+                <span class="sb-pct">85%</span>
+              </div>
+              <div class="sb-track"><div class="sb-fill" data-pct="85"></div></div>
+            </div>
+            <div class="sb-item">
+              <div class="sb-meta">
+                <span class="sb-name">CRM &amp; Automation</span>
+                <span class="sb-pct">82%</span>
+              </div>
+              <div class="sb-track"><div class="sb-fill" data-pct="82"></div></div>
+            </div>
+            <div class="sb-item">
+              <div class="sb-meta">
+                <span class="sb-name">Team Leadership</span>
+                <span class="sb-pct">90%</span>
+              </div>
+              <div class="sb-track"><div class="sb-fill" data-pct="90"></div></div>
+            </div>
+            <div class="sb-item">
+              <div class="sb-meta">
+                <span class="sb-name">AI Tools &amp; Workflow</span>
+                <span class="sb-pct">80%</span>
+              </div>
+              <div class="sb-track"><div class="sb-fill" data-pct="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── HIGHLIGHTS ─── -->
+  <section class="highlights">
+    <div class="container">
+      <div class="hl-head">
+        <span class="eyebrow">Ghi nhận của ngành</span>
+        <h2>Giải thưởng, chứng chỉ và những lần được cộng đồng marketing Việt Nam vinh danh.</h2>
+      </div>
+
+      <div class="hl-list">
+        <div class="hl-item">
+          <span class="hl-name">Top 100 Marketing Leader Vietnam</span>
+          <span class="hl-meta">Marketing Magazine · 2023</span>
+        </div>
+        <div class="hl-item">
+          <span class="hl-name">Best Digital Campaign of the Year</span>
+          <span class="hl-meta">Vietnam Digital Awards · 2022</span>
+        </div>
+        <div class="hl-item">
+          <span class="hl-name">Best Performance Marketing Team</span>
+          <span class="hl-meta">Meta Business Awards SEA · 2022</span>
+        </div>
+        <div class="hl-item">
+          <span class="hl-name">Speaker — Data-driven Marketing trong thời đại AI</span>
+          <span class="hl-meta">Vietnam Marketing Summit · 2023</span>
+        </div>
+        <div class="hl-item">
+          <span class="hl-name">Nhân viên xuất sắc của năm</span>
+          <span class="hl-meta">GreenMart Vietnam · 2023</span>
+        </div>
+        <div class="hl-item">
+          <span class="hl-name">Chứng chỉ GA4, Meta &amp; HubSpot</span>
+          <span class="hl-meta">2021 — 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="eyebrow">Hợp tác — 2025</span>
+      <h2 class="contact-title">
+        Sẵn sàng cho<br>
+        các vị trí <em>CMO</em> và<br>
+        <em>Head of Marketing</em>.
+      </h2>
+      <p class="contact-lead">
+        Nếu bạn đang tìm một marketer có thể bước vào và vận hành ngay từ ngày đầu — từ chiến lược kênh, đội ngũ, đến chỉ số tăng trưởng — hãy bắt đầu một cuộc trao đổi ngắn.
+      </p>
+      <a href="mailto:linh.nguyen@email.com" class="contact-cta">Gửi email cho Mai Linh</a>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:linh.nguyen@email.com">linh.nguyen@email.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Điện thoại</div>
+          <div class="value"><a href="tel:+84901234567">0901 234 567</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="label">LinkedIn</div>
+          <div class="value"><a href="https://linkedin.com/in/mailinhmarketing" target="_blank" rel="noopener">/in/mailinhmarketing</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Địa điểm</div>
+          <div class="value">TP. Hồ Chí Minh, Việt Nam</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>© 2025 Nguyễn Thị Mai Linh — Senior Marketing Manager</span>
+      <span class="tag">Portfolio cá nhân</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* ── Helpers ── */
+  function fmtNum(val, isDecimal) {
+    if (isDecimal) {
+      return val.toFixed(1).replace('.', ',');
+    }
+    var r = Math.round(val);
+    // Vietnamese thousands: dot separator
+    return r.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
+  /* ── Counter animation ── */
+  function runCounter(el) {
+    var target   = parseFloat(el.dataset.target);
+    var suffix   = el.dataset.suffix  || '';
+    var prefix   = el.dataset.prefix  || '';
+    var isDecimal = el.dataset.decimal === '1';
+    var duration = 1400;
+    var startTs  = null;
+
+    function step(ts) {
+      if (!startTs) startTs = ts;
+      var elapsed  = ts - startTs;
+      var progress = Math.min(elapsed / duration, 1);
+      // ease-out cubic
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = target * eased;
+      el.textContent = prefix + fmtNum(current, isDecimal) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ── Skill bar animation ── */
+  function runBar(el) {
+    // tiny delay so transition triggers after paint
+    setTimeout(function () {
+      el.style.width = el.dataset.pct + '%';
+    }, 60);
+  }
+
+  /* ── IntersectionObserver ── */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      if (el.classList.contains('ach-count') || el.classList.contains('result-num')) {
+        runCounter(el);
+      } else if (el.classList.contains('sb-fill')) {
+        runBar(el);
+      }
+      io.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll('.ach-count, .result-num, .sb-fill').forEach(function (el) {
+    io.observe(el);
+  });
+})();
+</script>
+
+</body>
+</html>
